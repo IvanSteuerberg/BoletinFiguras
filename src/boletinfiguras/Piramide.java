@@ -11,7 +11,7 @@ Scanner sc = new Scanner(System.in);
 private int numFilas;
 
 public void pedirDatos(){
-    System.out.println("Introduce a altura da piramide");
+    System.out.println("Introduce o numero de filas da piramide");
 numFilas = sc.nextInt();    
 }
 
