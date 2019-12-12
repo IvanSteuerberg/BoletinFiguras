@@ -6,34 +6,28 @@ import java.util.Scanner;
  *
  * @author irodriguezsteuerberg
  */
-public class Piramide {
- private final String simbolo="*";    
+public class Piramide {  
 Scanner sc = new Scanner(System.in);
-private int altura2;
-private String espazo=" ";
+private int numFilas;
 
 public void pedirDatos(){
     System.out.println("Introduce a altura da piramide");
-altura2 = sc.nextInt();    
+numFilas = sc.nextInt();    
 }
 
 public void DebuxaPiramide(){
-pedirDatos();
-String acumulador = "*";   
-for (int i=0;i<altura2;i++){
-    for (int j=altura2;j>altura2;j--){
-acumulador = " " + acumulador;   
-}
+pedirDatos();   
+        for(int altura = 1; altura<=numFilas; altura++){
 
-    }   
-}  
-    
-    
-    
-    
-    
-    
-    
-    
+            for(int espacios = 1; espacios<=numFilas-altura; espacios++){
+                System.out.print(" ");
+            }
+ 
+            for(int asteriscos=1; asteriscos<=(altura*2)-1; asteriscos++){
+                System.out.print("*");
+            }
+            System.out.println();  
+}      
+}    
     
 }
